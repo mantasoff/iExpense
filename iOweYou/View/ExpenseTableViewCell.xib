@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="KGk-i7-Jjw" customClass="ExpenseTableViewCell" customModule="iOweYou" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mantas Paškevičius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cau-rY-jg8">
+                        <rect key="frame" x="16" y="12" width="170" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="170" id="ocQ-KY-r8J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="MmY-Oa-Lbp">
+                        <rect key="frame" x="163" y="12" width="151" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.0 Eur" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="an1-fy-CkX">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="VGn-Wx-SQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cam-dr-lzm">
+                                <rect key="frame" x="128" y="0.0" width="23" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="GxK-Tj-LEX"/>
+                                    <constraint firstAttribute="width" constant="23" id="tq0-2I-M6k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button" image="delete.left.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="onDeleteButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vUN-0r-XTC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cau-rY-jg8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9gQ-OP-6m4"/>
+                    <constraint firstAttribute="bottom" secondItem="cau-rY-jg8" secondAttribute="bottom" constant="11" id="AeC-xl-lDC"/>
+                    <constraint firstItem="cau-rY-jg8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="DvT-oB-V8m"/>
+                    <constraint firstAttribute="bottom" secondItem="MmY-Oa-Lbp" secondAttribute="bottom" constant="10" id="Ooc-81-1ug"/>
+                    <constraint firstAttribute="trailing" secondItem="MmY-Oa-Lbp" secondAttribute="trailing" constant="6" id="SES-vH-vg4"/>
+                    <constraint firstAttribute="bottom" secondItem="cau-rY-jg8" secondAttribute="bottom" constant="11" id="ero-lE-RJQ"/>
+                    <constraint firstItem="cau-rY-jg8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="iRp-CT-nV2"/>
+                    <constraint firstItem="MmY-Oa-Lbp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="nrb-oN-DhE"/>
+                    <constraint firstItem="cau-rY-jg8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="twS-5s-4k8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="debtLabel" destination="an1-fy-CkX" id="KlJ-wb-yzS"/>
+                <outlet property="deletionButton" destination="cam-dr-lzm" id="HzA-Y5-wDh"/>
+                <outlet property="nameLabel" destination="cau-rY-jg8" id="F8W-TP-Bkb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete.left.fill" catalog="system" width="64" height="52"/>
+    </resources>
+</document>

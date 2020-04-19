@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,27 @@
 		AB14389324157990006252C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB14389124157990006252C2 /* Main.storyboard */; };
 		AB14389524157990006252C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB14389424157990006252C2 /* Assets.xcassets */; };
 		AB14389824157990006252C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB14389624157990006252C2 /* LaunchScreen.storyboard */; };
+		AB1438A3241581DB006252C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1438A2241581DB006252C2 /* LoginViewController.swift */; };
+		AB1438A5241581FF006252C2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1438A4241581FF006252C2 /* RegisterViewController.swift */; };
+		AB1438A72415838F006252C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1438A62415838F006252C2 /* Constants.swift */; };
+		AB1438A9241584F5006252C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB1438A8241584F5006252C2 /* GoogleService-Info.plist */; };
+		AB1E4AE4242638A00080DD85 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E4AE3242638A00080DD85 /* Debt.swift */; };
+		AB1E4AE6242642210080DD85 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E4AE5242642210080DD85 /* AddExpenseViewController.swift */; };
+		AB631F452430F7CD00B14C0F /* ExpenseBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB631F442430F7CD00B14C0F /* ExpenseBrain.swift */; };
+		AB7612CD24158D4900846D6E /* DebtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7612CC24158D4900846D6E /* DebtsViewController.swift */; };
+		AB7612D02415920000846D6E /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7612CE2415920000846D6E /* ExpenseTableViewCell.swift */; };
+		AB7612D12415920000846D6E /* ExpenseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7612CF2415920000846D6E /* ExpenseTableViewCell.xib */; };
+		ABECAD85243E2373009B23BC /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECAD84243E2373009B23BC /* ContactTableViewController.swift */; };
+		ABECAD87243E2460009B23BC /* ContactBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECAD86243E2460009B23BC /* ContactBrain.swift */; };
+		ABECAD8A243E2632009B23BC /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECAD88243E2632009B23BC /* ContactTableViewCell.swift */; };
+		ABECAD8B243E2632009B23BC /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABECAD89243E2632009B23BC /* ContactTableViewCell.xib */; };
+		CF0A9B994D3BA740E19EACB4 /* Pods_iOweYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBCA0E1CE4CAE9C8BF5F0CE /* Pods_iOweYou.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		455201B427916A6C42180875 /* Pods-iOweYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOweYou.debug.xcconfig"; path = "Target Support Files/Pods-iOweYou/Pods-iOweYou.debug.xcconfig"; sourceTree = "<group>"; };
+		6FBCA0E1CE4CAE9C8BF5F0CE /* Pods_iOweYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOweYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9C7BD869DEE42493C5C6A5 /* Pods-iOweYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOweYou.release.xcconfig"; path = "Target Support Files/Pods-iOweYou/Pods-iOweYou.release.xcconfig"; sourceTree = "<group>"; };
 		AB14388824157990006252C2 /* iOweYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOweYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB14388B24157990006252C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB14388D24157990006252C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +42,20 @@
 		AB14389424157990006252C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB14389724157990006252C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB14389924157990006252C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1438A2241581DB006252C2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AB1438A4241581FF006252C2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AB1438A62415838F006252C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB1438A8241584F5006252C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB1E4AE3242638A00080DD85 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		AB1E4AE5242642210080DD85 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		AB631F442430F7CD00B14C0F /* ExpenseBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseBrain.swift; sourceTree = "<group>"; };
+		AB7612CC24158D4900846D6E /* DebtsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtsViewController.swift; sourceTree = "<group>"; };
+		AB7612CE2415920000846D6E /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		AB7612CF2415920000846D6E /* ExpenseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpenseTableViewCell.xib; sourceTree = "<group>"; };
+		ABECAD84243E2373009B23BC /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		ABECAD86243E2460009B23BC /* ContactBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactBrain.swift; sourceTree = "<group>"; };
+		ABECAD88243E2632009B23BC /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		ABECAD89243E2632009B23BC /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0A9B994D3BA740E19EACB4 /* Pods_iOweYou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F91F16E5389F3C9E0327A59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				455201B427916A6C42180875 /* Pods-iOweYou.debug.xcconfig */,
+				8B9C7BD869DEE42493C5C6A5 /* Pods-iOweYou.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AB14387F24157990006252C2 = {
 			isa = PBXGroup;
 			children = (
 				AB14388A24157990006252C2 /* iOweYou */,
 				AB14388924157990006252C2 /* Products */,
+				8F91F16E5389F3C9E0327A59 /* Pods */,
+				C5C55F3B0151E2D5B9441344 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +100,61 @@
 		AB14388A24157990006252C2 /* iOweYou */ = {
 			isa = PBXGroup;
 			children = (
+				AB1438A12415816B006252C2 /* Controller */,
+				AB1438A024158167006252C2 /* View */,
+				AB14389F2415815A006252C2 /* Model */,
 				AB14388B24157990006252C2 /* AppDelegate.swift */,
 				AB14388D24157990006252C2 /* SceneDelegate.swift */,
-				AB14388F24157990006252C2 /* ViewController.swift */,
-				AB14389124157990006252C2 /* Main.storyboard */,
 				AB14389424157990006252C2 /* Assets.xcassets */,
 				AB14389624157990006252C2 /* LaunchScreen.storyboard */,
 				AB14389924157990006252C2 /* Info.plist */,
+				AB1438A62415838F006252C2 /* Constants.swift */,
+				AB1438A8241584F5006252C2 /* GoogleService-Info.plist */,
 			);
 			path = iOweYou;
+			sourceTree = "<group>";
+		};
+		AB14389F2415815A006252C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E4AE3242638A00080DD85 /* Debt.swift */,
+				AB631F442430F7CD00B14C0F /* ExpenseBrain.swift */,
+				ABECAD86243E2460009B23BC /* ContactBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB1438A024158167006252C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB14389124157990006252C2 /* Main.storyboard */,
+				AB7612CE2415920000846D6E /* ExpenseTableViewCell.swift */,
+				AB7612CF2415920000846D6E /* ExpenseTableViewCell.xib */,
+				ABECAD89243E2632009B23BC /* ContactTableViewCell.xib */,
+				ABECAD88243E2632009B23BC /* ContactTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB1438A12415816B006252C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB14388F24157990006252C2 /* ViewController.swift */,
+				AB1438A2241581DB006252C2 /* LoginViewController.swift */,
+				AB1438A4241581FF006252C2 /* RegisterViewController.swift */,
+				AB7612CC24158D4900846D6E /* DebtsViewController.swift */,
+				AB1E4AE5242642210080DD85 /* AddExpenseViewController.swift */,
+				ABECAD84243E2373009B23BC /* ContactTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5C55F3B0151E2D5B9441344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FBCA0E1CE4CAE9C8BF5F0CE /* Pods_iOweYou.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB14389C24157990006252C2 /* Build configuration list for PBXNativeTarget "iOweYou" */;
 			buildPhases = (
+				6EC37CD652AD7535B929A304 /* [CP] Check Pods Manifest.lock */,
 				AB14388424157990006252C2 /* Sources */,
 				AB14388524157990006252C2 /* Frameworks */,
 				AB14388624157990006252C2 /* Resources */,
+				997D416FA585DB005BA4F67B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +217,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABECAD8B243E2632009B23BC /* ContactTableViewCell.xib in Resources */,
 				AB14389824157990006252C2 /* LaunchScreen.storyboard in Resources */,
+				AB1438A9241584F5006252C2 /* GoogleService-Info.plist in Resources */,
 				AB14389524157990006252C2 /* Assets.xcassets in Resources */,
 				AB14389324157990006252C2 /* Main.storyboard in Resources */,
+				AB7612D12415920000846D6E /* ExpenseTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EC37CD652AD7535B929A304 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOweYou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		997D416FA585DB005BA4F67B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOweYou/Pods-iOweYou-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOweYou/Pods-iOweYou-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOweYou/Pods-iOweYou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB14388424157990006252C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABECAD87243E2460009B23BC /* ContactBrain.swift in Sources */,
+				AB1E4AE4242638A00080DD85 /* Debt.swift in Sources */,
+				AB7612D02415920000846D6E /* ExpenseTableViewCell.swift in Sources */,
+				AB1438A3241581DB006252C2 /* LoginViewController.swift in Sources */,
+				ABECAD8A243E2632009B23BC /* ContactTableViewCell.swift in Sources */,
+				AB1438A5241581FF006252C2 /* RegisterViewController.swift in Sources */,
+				AB7612CD24158D4900846D6E /* DebtsViewController.swift in Sources */,
 				AB14389024157990006252C2 /* ViewController.swift in Sources */,
 				AB14388C24157990006252C2 /* AppDelegate.swift in Sources */,
+				AB1E4AE6242642210080DD85 /* AddExpenseViewController.swift in Sources */,
+				ABECAD85243E2373009B23BC /* ContactTableViewController.swift in Sources */,
 				AB14388E24157990006252C2 /* SceneDelegate.swift in Sources */,
+				AB631F452430F7CD00B14C0F /* ExpenseBrain.swift in Sources */,
+				AB1438A72415838F006252C2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +430,7 @@
 		};
 		AB14389D24157990006252C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455201B427916A6C42180875 /* Pods-iOweYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +448,7 @@
 		};
 		AB14389E24157990006252C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9C7BD869DEE42493C5C6A5 /* Pods-iOweYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
