@@ -14,7 +14,7 @@ class ExpenseTableViewCell: UITableViewCell {
     @IBOutlet weak var debtLabel: UILabel!
     @IBOutlet weak var deletionButton: UIButton!
     var id: String?
-    var onDeletionEvent: ((_ id: String) -> ())?
+    var onDeletionEvent: ((_ id: String, _ cb: @escaping (() -> ()?)) -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +29,9 @@ class ExpenseTableViewCell: UITableViewCell {
     
     @IBAction func onDeleteButtonClicked(_ sender: Any) {
         if onDeletionEvent != nil, id != nil {
-            onDeletionEvent!(id!)
+            onDeletionEvent!(id!, ({}))
         }
     }
+    
+    
 }

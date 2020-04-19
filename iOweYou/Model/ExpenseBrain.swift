@@ -36,7 +36,7 @@ class ExpenseBrain {
                             print(data)
                             
                             let description = (data[K.FStore.descriptionFieldName] ?? "") as? String
-                            let debt = Debt(userEmail: userEmail, id: document.documentID, name: recipient, debt: Decimal(string: expense) ?? 0, date: Decimal(date / 3600), description: description)
+                            let debt = Debt(userEmail: userEmail, id: document.documentID, name: recipient, debt: Decimal(string: expense) ?? 0, date: Double(date / 3600), description: description)
                             self.expenseArray?.append(debt)
                         }
                     }
@@ -71,7 +71,7 @@ class ExpenseBrain {
         }
     }
     
-    func deleteExpenseByID(_ id: String?) {
+    func deleteExpenseByID(_ id: String?, cb: @escaping (() -> ()?)) {
         if Auth.auth().currentUser == nil {
             print("The user has not logged in")
             return
@@ -87,6 +87,7 @@ class ExpenseBrain {
                 print(err!)
                 return
             }
+            cb()
         }
     }
 }

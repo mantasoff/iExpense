@@ -14,6 +14,7 @@ class DebtsViewController: UIViewController {
     var db: Firestore?
     var expenseBrain: ExpenseBrain?
     var settleExpense: Bool = false
+    var selectedIndex: Int?
     @IBOutlet weak var expenseTableView: UITableView!
     
     @IBOutlet weak var debtTableVIew: UITableView!
@@ -30,6 +31,7 @@ class DebtsViewController: UIViewController {
         super.viewDidLoad()
         debtTableVIew.dataSource = self
         debtTableVIew.register(UINib(nibName: K.cell.nibName, bundle: nil), forCellReuseIdentifier: K.cell.reusableCellName)
+        debtTableVIew.delegate = self
         db = Firestore.firestore()
         expenseBrain = ExpenseBrain()
         expenseBrain?.onSendFinished = refreshData
@@ -60,6 +62,12 @@ class DebtsViewController: UIViewController {
         if segue.identifier == K.segues.expensesToAdd {
             if let AddExpensesViewController = segue.destination as? AddExpenseViewController {
                 AddExpensesViewController.expenseBrain = expenseBrain
+            }
+        }
+        if segue.identifier == K.segues.expenseToDetailed {
+            if let detailedInformationViewController = segue.destination as? DetailedInformationViewController, expenseBrain != nil, selectedIndex != nil {
+                detailedInformationViewController.expenseBrain = expenseBrain
+                detailedInformationViewController.expense = expenseBrain?.expenseArray![selectedIndex!]
             }
         }
     }
@@ -93,6 +101,22 @@ extension DebtsViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
+}
+
+//MARK: - Extension UITableViewDelegate
+extension DebtsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if expenseBrain == nil {
+            return
+        }
+        
+        if expenseBrain?.expenseArray == nil {
+            return
+        }
+        
+        if let _ = expenseBrain?.expenseArray![indexPath.row] {
+            selectedIndex = indexPath.row
+            performSegue(withIdentifier: K.segues.expenseToDetailed, sender: self)
+        }
+    }
 }

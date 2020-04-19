@@ -14,6 +14,7 @@ struct K {
         static let registerToDebts = "registerToDebts"
         static let expensesToAdd = "expensesToAdd"
         static let addToContact = "addToContact"
+        static let expenseToDetailed = "expenseToDetailed"
     }
     struct buttons {
         static let logOut = "Logout"
@@ -35,5 +36,8 @@ struct K {
     }
     struct textFields {
         static let expenseFieldName = "expenseText"
+    }
+    struct Titles {
+        static let detailedInformationTitle  = "Detailed Information"
     }
 }

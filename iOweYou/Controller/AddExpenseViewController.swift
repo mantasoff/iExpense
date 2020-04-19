@@ -42,7 +42,7 @@ class AddExpenseViewController: UIViewController {
                             id: nil,
                             name: recipientNameTextField.text!,
                             debt: expense!,
-                            date:  Decimal(Date().timeIntervalSince1970),
+                            date: Date().timeIntervalSince1970,
                             description: descriptionTextField.text ?? "")
             expenseBrain?.sendExpenseToFirestore(expense: debt, cb: onSendFinished)
         }
@@ -53,6 +53,7 @@ class AddExpenseViewController: UIViewController {
     @IBAction func contactButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: K.segues.addToContact, sender: self)
     }
+    
     private func onSendFinished() {
         navigationController?.popViewController(animated: true)
     }

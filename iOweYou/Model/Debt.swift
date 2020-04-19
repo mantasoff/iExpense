@@ -13,10 +13,10 @@ class Debt {
     var id: String?
     var name: String
     var debt: Decimal
-    var date: Decimal
+    var date: Double
     var description: String?
     
-    init(userEmail: String, id: String?, name: String, debt: Decimal, date: Decimal, description: String?) {
+    init(userEmail: String, id: String?, name: String, debt: Decimal, date: Double, description: String?) {
         self.userEmail = userEmail
         self.id = id
         self.name = name
